@@ -1,5 +1,6 @@
 /*Font Families*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
 :root {
   --wb-gray: #2E2E2E;
@@ -22,13 +23,16 @@ body {
 .header {
   height: 50px;
   width: calc(100% - (2 * var(--header-padding)));
-  background-color: gray;
+  width:100%;
+  background-color: var(--wb-gray);
+  box-shadow: 0 2px 5px black;
   font-size: 15px;
   text-align:right
 }
 
 .header h1 {
-  padding: var(--header-padding) 0px;
+  padding: var(--header-padding) 15px var(--header-padding) 0px;
+  font-family: "Hubballi", "Roboto", sans-serif;
 }
 
 
@@ -67,4 +71,15 @@ body {
 .request-bid-button {
   width:50px;
   height:
+}
+
+.feed-card {
+  
+}
+
+
+.logo {
+  position:absolute;
+  top:-0;
+  left:0;
 }
