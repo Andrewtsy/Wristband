@@ -33,25 +33,34 @@
           display: grid;
           grid-template-columns: auto auto;
           margin: 17px;
+          border-radius: 30px;
+          padding: 30
         }
       
       .bid_heading{
          background-color: 3E3E3E;
-          border:solid;
-/*           border-color:  */
           width: 100px;
-          min-height: 115px;
+          height: 25px;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          margin: 15px;
+      }
+      
+      .bid_description{
+        background-color: 3E3E3E;
+          width: 100px;
+          min-height: 25px;
           grid-column-start: 1;
           grid-column-end: 2;
       }
       
-      .bid_heading{
+      .bid_status{
         background-color: 00FF00;
-          border:solid;
           width: 100px;
-          min-height: 115px;
+          height: 30px;
           grid-column-start: 2;
-          grid-column-end: 2;
+          grid-column-end: 3;
+          border-radius: 15;
       }
         
     </style>
@@ -81,7 +90,7 @@
            Test Time
          </p>
        </div>
-       <div class="bid_description">
+       <div class="bid_status">
          Test Side
        </div>
       </div>
