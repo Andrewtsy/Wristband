@@ -3,7 +3,7 @@
 
 :root {
   --wb-gray: #2E2E2E;
-  
+  --header-padding: 10px;
 }
 
 body {
@@ -21,8 +21,14 @@ body {
 
 .header {
   height: 50px;
-  width:100%;
-  background-color: var(--wb-gray);
+  width: calc(100% - (2 * var(--header-padding)));
+  background-color: gray;
+  font-size: 15px;
+  text-align:right
+}
+
+.header h1 {
+  padding: var(--header-padding) 0px;
 }
 
 
@@ -44,8 +50,11 @@ body {
 
 .nav-bar {
   height: 50px;
-  width:100%;
-  background-color: red;
+  width:320px;
+  position:absolute;
+  top:518px;
+  background-color: inherit;
+  box-shadow:top 4px solid black;
 }
 
 .request-bid-button {

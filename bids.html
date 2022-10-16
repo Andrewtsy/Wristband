@@ -18,14 +18,41 @@
 
     <title>Wristband | Your Bids</title> 
     <style>
+ 
+      
+      .container{
+        padding-top: 10px;
+      }
         .bid_box {
+         margin-top: 0;
           background-color: blue;
           border:solid;
 /*           border-color:  */
           width: 282px;
           min-height: 115px;
+          display: grid;
+          grid-template-columns: auto auto;
+          margin: 17px;
         }
       
+      .bid_heading{
+         background-color: 3E3E3E;
+          border:solid;
+/*           border-color:  */
+          width: 100px;
+          min-height: 115px;
+          grid-column-start: 1;
+          grid-column-end: 2;
+      }
+      
+      .bid_heading{
+        background-color: 00FF00;
+          border:solid;
+          width: 100px;
+          min-height: 115px;
+          grid-column-start: 2;
+          grid-column-end: 2;
+      }
         
     </style>
 
@@ -37,23 +64,24 @@
 
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e0eea44a04.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
     <div class="container">
      <div class="bid_box">
-       <h1>
+       <h1 class="bid_heading">
          Test Heading
        </h1>
        <div>
-          <p>
+          <p class="bid_description">
            Test Location
          </p>
-         <p>
+         <p class="bid_description">
            Test Time
          </p>
        </div>
-       <div>
+       <div class="bid_description">
          Test Side
        </div>
       </div>
