@@ -32,30 +32,37 @@ body {
 }
 
 
-.nav{
-    border:1px solid #cccccc;
-    border-width:1px 0;
+.nav {
+    border:1px solid red;
     list-style:none;
     margin:0;
     padding:0;
+    height: 50px;
+    width: 320px;
+    position: absolute;
+    top: 518px;
+    left: 0px;
     text-align:center;
 }
 .nav li{
     display:inline;
 }
+
 .nav a{
     display:inline-block;
     padding:10px;
+    color:white;
+    text-decoration:none;
+    font-size:30px;
 }
 
-.nav-bar {
-  height: 50px;
-  width:320px;
-  position:absolute;
-  top:518px;
-  background-color: inherit;
-  box-shadow:top 4px solid black;
+.profile-icon {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color:white;
 }
+
 
 .request-bid-button {
   width:50px;
