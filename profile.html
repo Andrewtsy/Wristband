@@ -1,20 +1,109 @@
-<html>
-  <head>
-    
+<head>
+    <link rel="stylesheet" href="profile.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <title>Wristband | Profile</title>
-        <link rel="icon" href="https://cdn.glitch.global/387e0d8f-226a-4cbf-9984-9746b125c17f/favicon.ico?v=1665927159669" />
 
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/e0eea44a04.js" crossorigin="anonymous"></script>
+    <style>
+        /*Font Families*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-  </head>
-  <body>
+:root {
+  --wb-gray: #2E2E2E;
+  --header-padding: 10px;
+}
+
+body {
+  font-family:"Roboto", sans-serif;
+  color:white;
+  background-color: var(--wb-gray);
+  margin:0px;
+  padding:0px;
+  width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+}
+
+
+
+.nav{
+    border:1px solid #cccccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+.nav-bar {
+  height: 50px;
+  width:320px;
+  position:absolute;
+  top:1500px;
+  background-color: inherit;
+  box-shadow:top 4px solid black;
+}
+
+.profile {
+    text-align: center;
+    width: 863px;
+}
+
+.profile img {
+    width: 70%;
+    margin: 125px 0px 100px 0px;
+}
+
+.profile p {
+    font-size: 35px;
+}
+
+.profile input {
+    margin: 20px 170px;
+    padding:0px 35px;
+    height: 75px;
+    width: 500px;
+    border-radius: 75px;
+    font-size: 35px;
+    color: #2e2e2ead;
+}
+    </style>
+</head>
+<body>
     <div class="container">
-     
+        <div class="header"></div>
+
+        <div class="profile">
+            <img src="/00100dPORTRAIT_00100_BURST20190801175500723_COVER copy.png" class="profile-img">
+            <p>Sexual Safety Score: 95/100</p>
+            <input type="text" value="full name">
+            <input type="text" value="email address">
+        </div>
+
+        <div class="nav-bar">
+            <ul class="nav">
+              <li><a href="https://wristband.glitch.me/index.html"><i class="fa-solid fa-ticket"></i></a></li>
+              <li><a href="https://wristband.glitch.me/network.html/">About</a></li>
+              <li><a href="https://wristband.glitch.me/bids.html/">Work</a></li>
+              <li><a href="https://wristband.glitch.me/report.html/">Clients</a></li>
+              <li><a href="https://wristband.glitch.me/profile.html/">Contact</a></li>
+            </ul>
+          </div>
     </div>
-  </body>
-</html>
+</body>
