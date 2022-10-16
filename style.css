@@ -65,6 +65,8 @@ body {
   height:40px;
   border-radius:50%;
   background-color:white;
+  margin-bottom:-15px;
+  background-image:url();
 }
 
 
@@ -80,6 +82,8 @@ body {
 
 .logo {
   position:absolute;
-  top:-0;
-  left:0;
+  top:10px;
+  left:-25px;
+  width:90px;
+  height:90px;
 }
